@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Interactive rating component</title>
+
+        <link rel="icon" type="image/svg+xml" href="./images/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="./index.css" />
+    </head>
+
+    <body class="font-overpass bg-gray-900 text-gray-400">
+        <main class="wfa grid h-screen place-items-center">
+            <!-- rating -->
+            <div class="w-80 space-y-4 rounded-2xl bg-gray-800 p-4 md:w-96 md:space-y-6 md:p-6" id="ratingState">
+                <div class="circle grid place-items-center">
+                    <img class="h-4 w-4" src="./images/icon-star.svg" alt="" />
+                </div>
+                <h2 class="text-2xl font-bold text-white md:text-3xl">How did we do?</h2>
+                <p class="text-sm md:text-base">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+                <div class="flex justify-between">
+                    <button class="circle ratingBtn" id="ratingBtn1">1</button>
+                    <button class="circle ratingBtn" id="ratingBtn2">2</button>
+                    <button class="circle ratingBtn" id="ratingBtn3">3</button>
+                    <button class="circle ratingBtn" id="ratingBtn4">4</button>
+                    <button class="circle ratingBtn" id="ratingBtn5">5</button>
+                </div>
+                <button class="w-full rounded-full bg-orange-500 py-2 uppercase text-white hover:bg-white hover:text-orange-400 active:scale-95 md:py-3" id="submitBtn">Submit</button>
+            </div>
+
+            <!-- thank-you -->
+            <div class="hidden w-80 space-y-4 rounded-2xl bg-gray-800 p-4 md:w-96 md:space-y-6 md:p-6" id="thankYouState">
+                <div class="mx-auto w-fit">
+                    <img src="./images/illustration-thank-you.svg" alt="" />
+                </div>
+                <div class="mx-auto w-fit rounded-full bg-gray-700 py-2 px-6 text-orange-400">You selected <span></span> out of 5</div>
+                <h2 class="text-center text-2xl font-bold text-white md:text-3xl">Thank you!</h2>
+                <p class="text-center text-sm md:text-base">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+            </div>
+        </main>
+
+        <script type="module" src="./index.js"></script>
+    </body>
+</html>
