@@ -11,12 +11,15 @@
         <title>Interactive rating component</title>
     </head>
 
-    <body class="font-overpass bg-gray-900 text-gray-400">
+    <body class="font-overpass bg-base-300">
         <main class="wfa grid h-screen place-items-center">
             <!-- rating -->
-            <div class="w-80 space-y-4 rounded-2xl bg-gray-800 p-4 md:w-96 md:space-y-6 md:p-6" id="ratingState">
+            <div class="bg-primary text-primary-content w-80 space-y-4 rounded-xl p-4 md:w-96 md:space-y-6 md:p-6" id="ratingState">
                 <div class="circle grid place-items-center">
-                    <img class="h-4 w-4" src="./images/icon-star.svg" alt="" />
+                    <svg class="fill-accent" width="17" height="16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z" />
+                    </svg>
                 </div>
                 <h2 class="text-2xl font-bold text-white md:text-3xl">How did we do?</h2>
                 <p class="text-sm md:text-base">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
@@ -27,15 +30,15 @@
                     <button class="circle ratingBtn" id="ratingBtn4">4</button>
                     <button class="circle ratingBtn" id="ratingBtn5">5</button>
                 </div>
-                <button class="w-full rounded-full bg-orange-500 py-2 uppercase text-white hover:bg-white hover:text-orange-400 active:scale-95 md:py-3" id="submitBtn">Submit</button>
+                <button class="bg-accent text-accent-content hover:bg-accent-focus w-full rounded-full py-2 uppercase tracking-widest active:scale-[.98] md:py-3" id="submitBtn">Submit</button>
             </div>
 
             <!-- thank-you -->
-            <div class="hidden w-80 space-y-4 rounded-2xl bg-gray-800 p-4 md:w-96 md:space-y-6 md:p-6" id="thankYouState">
+            <div class="bg-primary text-primary-content hidden w-80 space-y-4 rounded-xl p-4 md:w-96 md:space-y-6 md:p-6" id="thankYouState">
                 <div class="mx-auto w-fit">
                     <img src="./images/illustration-thank-you.svg" alt="" />
                 </div>
-                <div class="mx-auto w-fit rounded-full bg-gray-700 py-2 px-6 text-orange-400">You selected <span></span> out of 5</div>
+                <div class="bg-secondary text-accent mx-auto w-fit rounded-full py-2 px-8">You selected <span></span> out of 5</div>
                 <h2 class="text-center text-2xl font-bold text-white md:text-3xl">Thank you!</h2>
                 <p class="text-center text-sm md:text-base">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
             </div>

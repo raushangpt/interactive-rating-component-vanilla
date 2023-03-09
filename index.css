@@ -15,13 +15,13 @@ body {
 }
 
 .circle {
-    @apply h-10 w-10 rounded-full bg-gray-700 md:h-12 md:w-12;
+    @apply bg-secondary text-secondary-content h-10 w-10 rounded-full md:h-12 md:w-12;
 }
 
 .ratingBtn {
-    @apply hover:bg-orange-500 hover:text-white active:scale-95;
+    @apply hover:bg-accent hover:text-accent-content;
 }
 
 .active {
-    @apply bg-gray-400 text-white;
+    @apply bg-secondary-focus;
 }
