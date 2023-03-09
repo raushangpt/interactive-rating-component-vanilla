@@ -2,14 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-    html {
-        -webkit-tap-highlight-color: transparent;
-        height: -webkit-fill-available;
-    }
-    body {
-        height: -webkit-fill-available;
-    }
+html {
+    -webkit-tap-highlight-color: transparent;
+    height: -webkit-fill-available;
+}
+body {
+    height: -webkit-fill-available;
 }
 
 .wfa {
